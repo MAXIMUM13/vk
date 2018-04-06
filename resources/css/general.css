@@ -20,10 +20,10 @@ div.scroll_fix {
 /* главная иконка сайта на верхней панели */
 .top_home_link .top_home_logo {
     background: url(https://raw.githubusercontent.com/MAXIMUM13/vk/master/resources/images/vk_logo_128x128_001.png) -2px -1px no-repeat;
-    background-size: 48px 48px !important;
+    background-size: 44px 44px !important;
     width: 48px !important;
     height: 48px !important;
-    margin: 0 !important;
+    margin: 0 -45px !important;
 }
 
 /* текстовое поле поиска на верхней панели */
