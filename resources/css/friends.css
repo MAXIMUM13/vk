@@ -1,0 +1,23 @@
+/* 
+    Created on : 22.04.2016, 13:26:25
+    Author     : MAXIMUM13
+*/
+
+/*  */
+
+/* ------------- Раздел "Друзья" ------------- */
+
+/* иконка с изображением друга */
+.friends_photo_img {
+    border-radius: 0 !important;
+}
+
+/* список возможных друзей (справа) */
+.right_list_img {
+    border-radius: 0 !important;
+}
+
+/* маленькие иконки в списке общих друзей в подразделе "Заявки в друзья" */
+.friends_common_img {
+    border-radius: 0 !important;
+}

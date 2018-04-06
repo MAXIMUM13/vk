@@ -1,0 +1,36 @@
+/* 
+    Created on : 16.04.2015, 20:04:18
+    Author     : MAXIMUM13
+*/
+
+/*  */
+
+/* ------------- Главная страница ------------- */
+
+/* Изображение пользователя на верхней панели */
+.top_profile_img {
+    border-radius: 0 !important;
+}
+
+/* кнопка "Редактировать" */
+a.flat_button.button_wide.secondary {
+    background-color: blue !important; /* #597DA3 */
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/* кнопка "Отправить" (Прикрепить запись на стену) */
+#send_post {
+    background-color: blue !important; /* #597DA3 */
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/* Иконка в разделе "Интересные страницы" */
+.page_list_module .cell_img {
+    border-radius: 0 !important;
+}
+.page_list_module .thumb {
+    border-radius: 0 !important;
+}
+

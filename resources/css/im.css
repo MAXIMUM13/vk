@@ -1,0 +1,57 @@
+/* 
+    Created on : 18.04.2016, 22:55:17
+    Author     : MAXIMUM13
+*/
+
+/*  */
+
+/* ------------- Раздел "Личные сообщения" ------------- */
+
+/* иконка с маленьким изображением пользователя в списке диалогов */
+.nim-peer--photo-w {
+    border-radius: 0 !important;
+}
+
+/* непрочитанное отправленное сообщение в списке диалогов */
+div .nim-dialog_unread-out .nim-dialog--cw {
+    background-color: #EDF0F5 !important; /* #EDF1F5 */
+    margin-top: 3px !important;
+    padding-left: 3px !important;
+    margin-right: -7px !important;
+}
+
+/* непрочитанное полученное сообщение в списке диалогов */
+div .nim-dialog_unread .nim-dialog--cw {
+    background-color: #EDF0F5 !important; /* #EDF1F5 */
+    margin-top: 3px !important;
+    padding-bottom: 5px !important;
+    padding-left: 3px !important;
+    margin-right: -7px !important;
+}
+
+/* выделенное непрочитанное отправленное сообщение */
+li.nim-dialog._im_dialog.nim-dialog_unread-out.nim-dialog_selected._im_dialog_selected
+div.nim-dialog--cw {
+    background-color: blue !important; /* #7293B6 */
+}
+
+/* выделенное непрочитанное полученное сообщение */
+li.nim-dialog._im_dialog.nim-dialog_unread.nim-dialog_selected._im_dialog_selected
+div.nim-dialog--cw {
+    background-color: blue !important; /* #7293B6 */
+}
+
+/* точка на непрочитанном отправленном сообщении в списке диалогов */
+.nim-dialog.nim-dialog_unread-out .nim-dialog--unread {
+    width: 0px !important;
+    height: 0px !important;
+}
+
+/* точка на непрочитанном полученном сообщении в списке диалогов */
+.nim-dialog.nim-dialog_unread .nim-dialog--unread {
+    background: blue !important;
+}
+
+.nim-dialog.nim-dialog_selected {
+    background: blue !important;
+}

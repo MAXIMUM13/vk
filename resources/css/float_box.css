@@ -1,0 +1,46 @@
+/* 
+    Created on : 18.04.2016, 22:59:42
+    Author     : MAXIMUM13
+*/
+
+/*  */
+
+/* ------------- Плавающее окно со списком чатов ------------- */
+
+/* основное окно */
+.fc_tab_wrap {
+    width: 240px !important;
+}
+
+/* иконка с изображением пользователя */
+img.fc_contact_photo {
+    border-radius: 0 !important;
+}
+
+/* ***************************************************************** */
+
+/* значок, указывающий на то, что пользователь находится в сети */
+
+/* с компьютера */
+span.fc_contact_photo.online:after {
+    left: 210px !important;
+    bottom: 15px !important;
+    border-radius: 50px !important;
+}
+
+/* с мобильного устройства */
+span.fc_contact_photo.online.mobile:after {
+    left: 210px !important;
+    bottom: 14px !important;
+    border-radius: 0 !important;
+    border: none !important;
+    width: 8px !important;
+    height: 12px !important;
+}
+
+/* ***************************************************************** */
+
+/* шапка окна */
+.fc_tab_head {
+    background-color: blue !important;
+}
