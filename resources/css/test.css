@@ -1,3 +1,3 @@
-.nim-peer .nim-peer--photo-w {
+.nim-peer .nim-peer--photo-w, .nim-peer .nim-peer--photo-w img {
     border-radius: 0 !important;
 }
