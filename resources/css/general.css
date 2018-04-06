@@ -1,0 +1,193 @@
+/* 
+    Created on : 16.04.2016, 20:04:18
+    Author     : MAXIMUM13
+*/
+
+/*  */
+
+/* ------------- Используемые на всех страницах ------------- */
+
+/* задний фон */
+div.scroll_fix {
+    background-color: white !important;
+}
+
+/* верхняя панель (шапка сайта) */
+#page_header_cont .back {
+    background-color: blue !important; /* #597DA3 */
+}
+
+/* главная иконка сайта на верхней панели */
+.top_home_link .top_home_logo {
+    background-size: 48px 48px !important;
+    width: 48px !important;
+    height: 48px !important;
+    margin: 0 !important;
+}
+
+/* текстовое поле поиска на верхней панели */
+#ts_input {
+    background-color: white !important;
+}
+
+/* панель с 2-мя кнопками: кнопкой уведомлений и кнопкой музыки */
+.top_nav_btn {
+    background-color: #EDF0F5 !important;
+    border-radius: 50% !important;
+}
+
+/* панель с 2-мя кнопками: кнопкой уведомлений и кнопкой музыки, когда она в фокусе */
+.top_nav_btn:hover {
+    background-color: chartreuse !important;
+}
+
+/* кнопка уведомлений на верхней панели */
+#top_notify_btn {
+
+}
+
+/* кнопка музыки на верхней панели */
+#top_audio {
+    margin-left: 5px !important;
+}
+
+/* основное содержимое страницы */
+#page_layout {
+   margin: 0px 0px 0px 110px !important;
+}
+
+/* главное меню сайта (слева) */
+#side_bar ol {
+    position: fixed !important;
+}
+
+/* панель выше главного меню */
+.side_bar_inner {
+    position: relative !important;
+    margin-top: 46px !important;
+}
+
+/* пункты главного меню */
+#side_bar .left_label {
+    width: 120px !important;
+}
+
+/* реклама (слева под главным меню) */
+div#ads_left {
+    visibility: hidden;
+    position: fixed !important;
+    margin-top: 600px;
+}
+
+/* ссылки сайта под левым меню */
+.left_menu_nav_wrap {
+    position: fixed !important;
+    margin-top: 350px !important;
+    width: 149px;
+}
+
+/* ссылка "Использовать новую версию сайта по умолчанию" */
+.leave_redesign {
+    position: fixed !important;
+    margin-top: 350px !important;
+    width: 149px;
+}
+
+/* иконка с изображением пользователя на панели со списком чатов (справа внизу) */
+.chat_tab_img {
+    border-radius: 0 !important;
+}
+
+/* точка на панели со списком чатов (справа внизу), указывающая на то, что пользователь в сети */
+.chat_tab_online_icon {
+    background-color: yellow !important;
+    border-color: red !important;
+    border-radius: 0 !important;
+    bottom: 4px !important;
+    right: 4px !important;
+}
+
+/* иконки пользователя на панели со списком чатов (справа внизу), когда она в фокусе */
+.chat_tab_wrap:hover {
+    background-color: chartreuse !important;
+}
+
+/* панель со списком чатов (справа внизу) */
+.chat_onl_wrap {
+    right: 0px !important;
+    bottom: 0px !important;
+    /*top: 50px !important;*/
+}
+
+div.chat_onl_inner {
+    background-color: blue !important;
+}
+
+/* количество друзей онлайн на панели со списком чатов (справа внизу) */
+div#chat_onl.chat_onl {
+    color: white !important;
+}
+
+/* количество друзей онлайн на панели со списком чатов (справа внизу), когда этот блок в фокусе */
+.chat_tab_wrap:hover #chat_onl.chat_onl {
+    color: blue !important;
+}
+
+/* блок с кнопками "Поделиться" и "Мне нравится" */
+div.post_full_like {
+    float: right !important;
+}
+
+/* ссылка "Комментировать" */
+span.reply_link_wrap {
+    margin-right: 0 !important;
+    float: left !important;
+}
+
+/* кнопка "Мне нравится" */
+.post_like._like_wrap {
+    float: right !important;
+}
+
+/* кнопка "Поделиться" */
+.post_share._share_wrap {
+
+}
+
+/* небольшая иконка с изображением пользователя */
+.people_cell_img {
+    border-radius: 0 !important;
+}
+
+/* изображение опубликовавшего запись */
+.post_img {
+    border-radius: 0 !important;
+}
+
+/* изображение сообщества, которому принадлежит запись */
+.copy_post_img {
+    border-radius: 0 !important;
+}
+
+/* изображения пользователей, оценивших запись/фото и т.п. в отдельном окне */
+.fans_fan_img {
+    border-radius: 0 !important;
+}
+
+/* изображение пользователей, оценивших запись/фото и т.п. во всплывающем окне */
+.like_tt_image {
+    border-radius: 0 !important;
+}
+
+/* изображение пользователя возле его комментария */
+.reply_img {
+    border-radius: 0 !important;
+}
+
+/* точка на изображении пользователя, находящегося в сети */
+.online:after {
+    border-radius: 0 !important;
+    border: 2px solid red !important;
+    background-color: yellow !important;
+    margin: 0 -3px -3px 0 !important;
+}
