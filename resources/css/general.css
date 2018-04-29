@@ -58,6 +58,10 @@ div.scroll_fix {
 }
 
 /* главное меню сайта (слева) */
+#side_bar {
+    top: 0 !important;
+}
+
 #side_bar ol {
     position: fixed !important;
 }
