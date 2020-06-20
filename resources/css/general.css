@@ -88,14 +88,14 @@ div#ads_left {
 .left_menu_nav_wrap {
     position: fixed !important;
     margin-top: 350px !important;
-    width: 149px;
+    width: 150px;
 }
 
 /* ссылка "Использовать новую версию сайта по умолчанию" */
 .leave_redesign {
     position: fixed !important;
-    margin-top: 350px !important;
-    width: 149px;
+    bottom: 20px !important;
+    width: 150px;
 }
 
 /* иконка с изображением пользователя на панели со списком чатов (справа внизу) */
