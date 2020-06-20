@@ -87,13 +87,6 @@ div#ads_left {
 /* ссылки сайта под левым меню */
 .left_menu_nav_wrap {
     position: fixed !important;
-    margin-top: 350px !important;
-    width: 150px;
-}
-
-/* ссылка "Использовать новую версию сайта по умолчанию" */
-.leave_redesign {
-    position: fixed !important;
     bottom: 20px !important;
     width: 150px;
 }
