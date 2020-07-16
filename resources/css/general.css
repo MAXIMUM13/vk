@@ -79,16 +79,16 @@ div.scroll_fix {
 
 /* реклама (слева под главным меню) */
 div#ads_left {
-    visibility: hidden;
+    visibility: hidden !important;
     position: fixed !important;
-    margin-top: 600px;
+    margin-top: 600px !important;
 }
 
 /* ссылки сайта под левым меню */
 .left_menu_nav_wrap {
     position: fixed !important;
     bottom: 20px !important;
-    width: 150px;
+    width: 150px !important;
 }
 
 /* иконка с изображением пользователя на панели со списком чатов (справа внизу) */
