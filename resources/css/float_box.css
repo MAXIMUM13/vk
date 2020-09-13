@@ -36,6 +36,10 @@
     opacity: .6 !important;
 }
 
+.fc_contacts_wrap {
+    transition: height 2s ease-in;
+}
+
 /* иконка с изображением пользователя */
 img.fc_contact_photo {
     border-radius: 0 !important;
