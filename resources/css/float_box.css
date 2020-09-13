@@ -32,7 +32,7 @@
     transition: opacity .15s ease !important;
 }
 
-.fc_tab_resize_inactive {
+.fc_tab_resize .inactive {
     opacity: .6 !important;
 }
 
