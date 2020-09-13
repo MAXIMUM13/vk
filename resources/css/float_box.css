@@ -37,7 +37,7 @@
 }
 
 .fc_contacts_wrap {
-    transition: height 2s ease-in;
+    transition: height 700ms ease-in;
 }
 
 /* иконка с изображением пользователя */
