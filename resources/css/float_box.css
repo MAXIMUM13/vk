@@ -12,28 +12,25 @@
     width: 240px !important;
 }
 
-.fc_tab_close_wrap, .fc_tab_max_wrap, .fc_tab_resize_wrap, .fc_tab_pin_wrap {
-    padding: 4px !important;
-    margin-top: 5px !important;
-    cursor: pointer !important;
-}
-
-.fc_tab_close, .fc_tab_max, .fc_tab_resize, .fc_tab_pin {
-    display: block !important;
-    width: 12px !important;
-    height: 12px !important;
-    opacity: .6 !important;
-    transition: opacity .15s ease !important;
-}
-
 .fc_tab_resize_wrap {
     display: block !important;
     float: right !important;
     visibility: visible !important;
+    padding: 4px !important;
+    margin-top: 4px !important;
+    cursor: pointer !important;
 }
 
 .fc_tab_wrap .fc_tab_resize {
-    background-position: 0 -16px !important;
+    background-position: 0 -11px !important;
+}
+
+.fc_tab_resize {
+    display: block !important;
+    width: 12px !important;
+    height: 10px !important;
+    opacity: .6 !important;
+    transition: opacity .15s ease !important;
 }
 
 /* иконка с изображением пользователя */
