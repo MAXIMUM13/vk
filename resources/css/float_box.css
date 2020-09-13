@@ -36,7 +36,7 @@
     opacity: .6 !important;
 }
 
-.fc_contacts_wrap {
+.fc_contacts_wrap, .fc_scrollbar_cont .scrollbar_cont, .fc_scrollbar_inner .scrollbar_inner, .fc_contacts {
     transition: height 700ms ease-in;
 }
 
