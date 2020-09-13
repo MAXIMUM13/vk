@@ -22,13 +22,13 @@
 }
 
 .fc_tab_wrap .fc_tab_resize {
-    background-position: 0 -11px !important;
+    background-position: 0 -12px !important;
 }
 
 .fc_tab_resize {
     display: block !important;
     width: 12px !important;
-    height: 10px !important;
+    height: 9px !important;
     transition: opacity .15s ease !important;
 }
 
