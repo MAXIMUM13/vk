@@ -29,8 +29,11 @@
     display: block !important;
     width: 12px !important;
     height: 10px !important;
-    opacity: .6 !important;
     transition: opacity .15s ease !important;
+}
+
+.fc_tab_resize_inactive {
+    opacity: .6 !important;
 }
 
 /* иконка с изображением пользователя */
