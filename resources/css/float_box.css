@@ -12,6 +12,12 @@
     width: 240px !important;
 }
 
+.fc_tab_close_wrap, .fc_tab_max_wrap, .fc_tab_resize_wrap, .fc_tab_pin_wrap {
+    padding: 4px !important;
+    margin-top: 5px !important;
+    cursor: pointer !important;
+}
+
 .fc_tab_close, .fc_tab_max, .fc_tab_resize, .fc_tab_pin {
     display: block !important;
     width: 12px !important;
@@ -27,7 +33,7 @@
 }
 
 .fc_tab_wrap .fc_tab_resize {
-    background-position: 2px -16px !important;
+    background-position: 0 -16px !important;
 }
 
 /* иконка с изображением пользователя */
