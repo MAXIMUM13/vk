@@ -32,7 +32,7 @@
     transition: opacity .15s ease !important;
 }
 
-.fc_tab_wrap:not(:hover) .fc_tab_resize {
+.fc_tab_resize_wrap:not(:hover) .fc_tab_resize {
     opacity: .6 !important;
 }
 
