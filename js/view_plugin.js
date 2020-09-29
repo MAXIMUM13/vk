@@ -86,6 +86,13 @@
         });
     }
 
+    function fixSideBar() {
+        let sideBar = getElement('#side_bar');
+        let messageButton = getElement('#l_msg', sideBar);
+        let labelElement = getElement('.left_label', messageButton);
+        labelElement.text('Сообщения');
+    }
+
     function prepareFloatBox() {
         let floatBox = getElement('#rb_box_fc_clist');
         let floatBoxList = getElement('#fc_clist', floatBox);
@@ -136,6 +143,7 @@
 
     (function main() {
         loadStyles();
+        fixSideBar();
 
         setTimeout(function load() {
             let floatBox = getElement('#rb_box_fc_clist');
