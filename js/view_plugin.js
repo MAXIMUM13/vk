@@ -16,20 +16,15 @@
 // @grant        GM_getResourceText
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
     console.log('VKChange');
 
-    let pageCache = {};
+    const emptyFunction = function () {
+    };
 
-    /**
-     * Получить последнее значение массива.
-     */
-    function getLastValue(values) {
-        let lastIndex = (values ? values.length : 0) - 1;
-        return lastIndex >= 0 ? values[lastIndex] : null;
-    }
+    let pageCache = {};
 
     /**
      * Получить {@code document}-элемент переданного элемента (окна, фрейма).
@@ -56,7 +51,27 @@
     }
 
     function getElements(selector, parent) {
-        return $(selector, getDocument(parent));
+        return $(selector, parent);
+    }
+
+    function getFunction(func) {
+        return typeof (func) === 'function' ? func : emptyFunction;
+    }
+
+    function interceptInvokes(func, preInvoke, postInvoke) {
+        preInvoke = getFunction(preInvoke);
+        postInvoke = getFunction(postInvoke);
+
+        let self = this;
+        return function () {
+            let args = Array.prototype.slice.call(arguments);
+
+            preInvoke.call(self, func, args);
+            let result = func.apply(self, args);
+            postInvoke.call(self, func, args, result);
+
+            return result;
+        };
     }
 
     function addGlobalStyle(css) {
@@ -80,10 +95,35 @@
             'css_main_page',
             'css_news'
         ];
-        cssFileNames.forEach((cssFileName, i) => {
+        cssFileNames.forEach((cssFileName) => {
             let stylesText = GM_getResourceText(cssFileName);
             addGlobalStyle(stylesText);
         });
+    }
+
+    function initListeners() {
+        observeTitleChange();
+    }
+
+    function observeTitleChange() {
+        let observer = new MutationObserver(function (mutations, observer) {
+            observer.disconnect();
+            fixMessagesTitle();
+            observeTitleChange();
+        });
+
+        let titleElement = document.querySelector('head title');
+        observer.observe(titleElement, {
+            childList: true,
+            characterData: true
+        });
+    }
+
+    function fixMessagesTitle() {
+        if (window.location.pathname === '/im') {
+            let titleElement = getElement('head title');
+            titleElement.text('Сообщения');
+        }
     }
 
     function fixSideBar() {
@@ -114,7 +154,6 @@
         resizeButtonDiv.appendTo(resizeButton);
 
         let divElements = getElements('div', contactsWrap);
-        console.log(divElements.length);
         resizeButton.click(() => {
             let height = contactsWrap.css('height');
             let isCollapsed = height === '0px';
@@ -137,21 +176,22 @@
         });
     }
 
-    function execute() {
-        prepareFloatBox();
-    }
-
-    (function main() {
-        loadStyles();
-        fixSideBar();
-
+    function fixFloatBox() {
         setTimeout(function load() {
             let floatBox = getElement('#rb_box_fc_clist');
             if (!floatBox.length) {
                 setTimeout(load, 500);
                 return false;
             }
-            execute();
+            prepareFloatBox();
         }, 500);
+    }
+
+    (function main() {
+        loadStyles();
+        initListeners();
+        fixSideBar();
+        fixMessagesTitle();
+        fixFloatBox();
     })();
 })();

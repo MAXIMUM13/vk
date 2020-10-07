@@ -13,7 +13,7 @@ div.scroll_fix {
 }
 
 /* верхняя панель (шапка сайта) */
-#page_header_cont .back {
+#page_header_cont {
     background-color: blue !important; /* #597DA3 */
 }
 
