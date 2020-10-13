@@ -120,7 +120,7 @@
     }
 
     function fixMessagesTitle() {
-        if (window.location.pathname === '/im') {
+        if (['/im', '/al_im.php'].includes(window.location.pathname)) {
             let titleElement = getElement('head title');
             titleElement.text('Сообщения');
         }
