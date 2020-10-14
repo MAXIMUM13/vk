@@ -24,6 +24,10 @@
     right: 7px !important;
 }
 
+.nim-dialog .nim-dialog--close {
+    right: 7px !important;
+}
+
 /* непрочитанное отправленное сообщение в списке диалогов */
 .nim-dialog_unread-out .nim-dialog--cw {
     background-color: #EDF0F5 !important; /* #EDF1F5 */
