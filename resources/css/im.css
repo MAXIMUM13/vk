@@ -32,6 +32,10 @@
     right: 7px !important;
 }
 
+.nim-dialog .nim-dialog--text-preview {
+    padding-top: 5px !important;
+}
+
 .nim-dialog .tt_w.tt_black {
     left: 74% !important;
 }
