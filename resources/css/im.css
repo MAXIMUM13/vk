@@ -12,21 +12,33 @@
     border-radius: 0 !important;
 }
 
+.nim-dialog .nim-dialog--cw {
+    padding: 5px 0 !important;
+}
+
+.nim-dialog .nim-dialog--cw {
+    position: initial !important;
+}
+
+.nim-dialog .nim-dialog--date {
+    right: 7px !important;
+}
+
 /* непрочитанное отправленное сообщение в списке диалогов */
-div .nim-dialog_unread-out .nim-dialog--cw {
+.nim-dialog_unread-out .nim-dialog--cw {
     background-color: #EDF0F5 !important; /* #EDF1F5 */
     margin-top: 3px !important;
-    padding-left: 3px !important;
-    margin-right: -7px !important;
+    padding-left: 2px !important;
+    margin-right: -12px !important;
 }
 
 /* непрочитанное полученное сообщение в списке диалогов */
-div .nim-dialog_unread .nim-dialog--cw {
+.nim-dialog_unread .nim-dialog--cw {
     background-color: #EDF0F5 !important; /* #EDF1F5 */
     margin-top: 3px !important;
     padding-bottom: 5px !important;
-    padding-left: 3px !important;
-    margin-right: -7px !important;
+    padding-left: 2px !important;
+    margin-right: -12px !important;
 }
 
 /* выделенное непрочитанное отправленное сообщение */
