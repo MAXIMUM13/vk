@@ -26,6 +26,7 @@
 
 .nim-dialog .nim-dialog--unread_container {
     right: 7px !important;
+    margin-top: -20px !important;
 }
 
 .nim-dialog .nim-dialog--text-preview {
@@ -40,8 +41,10 @@
 .nim-dialog_unread-out .nim-dialog--cw {
     background-color: #EDF0F5 !important; /* #EDF1F5 */
     margin-top: 3px !important;
-    padding-left: 2px !important;
     margin-right: -12px !important;
+    padding-top: 5px !important;
+    padding-bottom: 0 !important;
+    padding-left: 2px !important;
 }
 
 /* непрочитанное полученное сообщение в списке диалогов */
