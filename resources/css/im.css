@@ -28,8 +28,12 @@
     right: 7px !important;
 }
 
+.nim-dialog .nim-dialog--unread_container {
+    right: 7px !important;
+}
+
 .nim-dialog .tt_w.tt_black {
-    left: 150px !important;
+    left: 74% !important;
 }
 
 /* непрочитанное отправленное сообщение в списке диалогов */
