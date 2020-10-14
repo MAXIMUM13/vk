@@ -13,10 +13,6 @@
 }
 
 .nim-dialog .nim-dialog--cw {
-    padding: 5px 0 !important;
-}
-
-.nim-dialog .nim-dialog--cw {
     position: initial !important;
 }
 
@@ -52,9 +48,10 @@
 .nim-dialog_unread .nim-dialog--cw {
     background-color: #EDF0F5 !important; /* #EDF1F5 */
     margin-top: 3px !important;
-    padding-bottom: 5px !important;
-    padding-left: 2px !important;
     margin-right: -12px !important;
+    padding-top: 5px !important;
+    padding-bottom: 0 !important;
+    padding-left: 2px !important;
 }
 
 /* выделенное непрочитанное отправленное сообщение */
