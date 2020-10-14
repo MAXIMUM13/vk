@@ -37,7 +37,7 @@
     left: 74% !important;
 }
 
-.nim-dialog:not(.nim-dialog_unread-out) .nim-dialog--cw {
+.nim-dialog:not(.nim-dialog_unread):not(.nim-dialog_unread-out) .nim-dialog--cw {
     padding: 6px 0 !important;
 }
 
